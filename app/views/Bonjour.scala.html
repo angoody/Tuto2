@@ -1,0 +1,27 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+
+@(title: String, date: String, place: String)
+
+<!DOCTYPE html>
+
+<html lang="fr">
+        <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <head>
+
+        <title>@title</title>
+
+    </head>
+    <body>
+        <script src="/javascript/bonjour.js"></script>
+
+        Bonjour en HTML @date
+        <p>@place</p>
+    </body>
+</html>
